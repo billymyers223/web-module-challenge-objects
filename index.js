@@ -169,12 +169,13 @@ Use the getLastReview function below to do the following:
 
 
 function getLastReview(arr) {
-  arr.splice(arr.length,1);
+  
   let i = arr.length - 1;
   return arr[i].name + " gave the restaurant a " + arr[i].rating + " star review, and their feedback was: " + arr[i].feedback;
 }
 
 
+   
 
 
 ///////////////🍔☕️🍽 STRETCH🍔☕️🍽////////////////////
