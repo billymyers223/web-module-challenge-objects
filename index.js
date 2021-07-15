@@ -126,14 +126,15 @@ Write a function that creates an object with name, rating, feedback, add the new
 */
 
 function addReview(arr, keyName, rate, feed){
-  arr.push({
+   let arr1 = arr;
+   arr1.push({
     name:keyName,
     rating:rate,
     feedback:feed,
   });
   
-  return arr;
-  /*Your Code Here */
+   return arr1;
+  // /*Your Code Here */
 }
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -167,11 +168,11 @@ Use the getLastReview function below to do the following:
 */
 
 
-function getLastReview() {
-  //   let num = arr.length;
-  //   return arr[num];
-  // /*Your code here*/
-} 
+function getLastReview(arr) {
+  arr.splice(arr.length,1);
+  let i = arr.length - 1;
+  return arr[i].name + " gave the restaurant a " + arr[i].rating + " star review, and their feedback was: " + arr[i].feedback;
+}
 
 
 
